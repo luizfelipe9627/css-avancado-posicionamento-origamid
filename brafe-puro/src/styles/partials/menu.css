@@ -5,6 +5,7 @@
 
 .menu-container {
   max-width: 960px;
+  /* O margin está sendo usado para centralizar o elemento. */
   margin: 0 auto;
 }
 
@@ -17,13 +18,28 @@
 }
 
 .menu-logo {
+  /* O display block está sendo usado para que o elemento ocupe toda a largura disponível do container(o menu-container). */
   display: block;
   /* O float está sendo usado para que o elemento vá para a esquerda e o próximo elemento(o menu-nav) fique ao lado dele. */
   float: left;
+  margin-left: 10px;
 }
 
 .menu-nav {
-  display: block;
   /* O float está sendo usado para que o elemento vá para a direita e o próximo elemento(o menu-logo) fique ao lado dele. */
   float: right;
+  margin-right: 10px;
+}
+
+.menu-nav li {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha(inline) e que possam ocupar somente o espaço necessário. */
+  display: inline-block;
+}
+
+.menu-nav a {
+  /* O display block está sendo usado para que o elemento ocupe toda a largura disponível do container(o menu-nav). */
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.125em;
 }
