@@ -1,0 +1,29 @@
+.menu {
+  background-color: #252525;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Está aplicando o clearfix para que os elementos filhos do menu-container não fiquem flutuando e assim o container não tenha altura 0. */
+.menu-container::after,
+.menu-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-logo {
+  display: block;
+  /* O float está sendo usado para que o elemento vá para a esquerda e o próximo elemento(o menu-nav) fique ao lado dele. */
+  float: left;
+}
+
+.menu-nav {
+  display: block;
+  /* O float está sendo usado para que o elemento vá para a direita e o próximo elemento(o menu-logo) fique ao lado dele. */
+  float: right;
+}
