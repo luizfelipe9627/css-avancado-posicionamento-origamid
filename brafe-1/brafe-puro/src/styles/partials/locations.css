@@ -1,0 +1,81 @@
+.locations {
+  max-width: 960px;
+  /* O margin está sendo usado para centralizar o elemento. */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.locations-item {
+  /* O clear both está sendo aplicado no elemento .locations-item para que ele não fique ao lado do elemento anterior */
+  clear: both;
+  margin: 60px auto;
+}
+
+/* Está aplicando o clearfix para que os elementos filhos do locations-item não fiquem flutuando e assim o item não tenha altura 0. */
+.locations-item::after,
+.locations-item::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.locations-item img {
+  max-width: 460px;
+  /* O float left está sendo aplicado para que a imagem fique ao lado do texto. */
+  float: left;
+  margin: 0 10px;
+}
+
+/* Está falando com o elemento div dentro de .locations-item */
+.locations-item > div {
+  max-width: 460px;
+  /* O float left está sendo aplicado para que o texto fique ao lado da imagem. */
+  float: left;
+  margin: 0 10px;
+}
+
+.locations-item h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.locations-item p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+
+.locations-item a {
+  padding: 10px 20px;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  /* Quando não é passado a cor da borda ele pega a cor do texto. */
+  border: 3px solid;
+  color: #252525;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .locations {
+    max-width: 720px;
+  }
+
+  /* Está falando com o elemento div dentro de .locations-item */
+  .locations-item > div,
+  .locations-item img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .locations {
+    max-width: 300px;
+  }
+
+  /* Está falando com o elemento div dentro de .locations-item */
+  .locations-item > div,
+  .locations-item img {
+    max-width: 300px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,98 @@
+.newsletter {
+  background-color: #e7e4d8;
+  padding: 30px 0;
+}
+
+.newsletter-container {
+  max-width: 960px;
+  /* O margin está sendo usado para centralizar o elemento. */
+  margin: 0 auto;
+}
+
+/* Está aplicando o clearfix para que os elementos filhos do newsletter-container não fiquem flutuando e assim o container não tenha altura 0. */
+.newsletter-container::after,
+.newsletter-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.newsletter-info {
+  width: 460px;
+  margin: 0 10;
+  /* O float left está sendo aplicado para que o formulário fique ao lado do texto. */
+  float: left;
+}
+
+.newsletter-info h2 {
+  font-size: 2.25em;
+  text-transform: capitalize;
+}
+
+.newsletter-info p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.newsletter form {
+  width: 460px;
+  margin: 10px 10px 0 10px;
+  /* O float right está sendo aplicado para que o formulário fique ao lado do texto. */
+  float: right;
+}
+
+.newsletter form label {
+  display: none;
+}
+
+.newsletter form input {
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, serif;
+  padding: 10px;
+  /* O float left está sendo aplicado para que o botão fique ao lado do input. */
+  float: left;
+}
+
+.newsletter form button {
+  width: 140px;
+  background: #252525;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, serif;
+  padding: 13px 0;
+  color: #fff;
+  /* O float left está sendo aplicado para que o botão fique ao lado do input. */
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .newsletter-container {
+    max-width: 720px;
+  }
+
+  .newsletter-info,
+  .newsletter form,
+  .newsletter input {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .newsletter-container {
+    max-width: 300px;
+  }
+
+  .newsletter-info,
+  .newsletter form,
+  .newsletter input {
+    width: 300px;
+    margin: 10px 0 0 0;
+  }
+}

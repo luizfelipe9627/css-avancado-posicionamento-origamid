@@ -1,0 +1,77 @@
+.about {
+  padding: 60px 0;
+}
+
+.about-container {
+  max-width: 960px;
+  /* O margin está sendo usado para centralizar o elemento. */
+
+  margin: 0 auto;
+}
+
+/* Está aplicando o clearfix para que os elementos filhos do about-container não fiquem flutuando e assim o container não tenha altura 0. */
+.about-container::after,
+.about-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about h2 {
+  font-size: 2.25em;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.about-item {
+  /* O float está sendo usado para que o elemento vá para a esquerda e o próximo elemento(o about-item) fique ao lado dele. */
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+
+.about-item h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  background-color: #252525;
+  width: 220px;
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-transform: lowercase;
+  padding: 5px 0 10px 0;
+  /* O position relative está sendo usado para que fique relativo ao elemento pai, sendo assim, o elemento filho pode ser posicionado em relação ao elemento pai mas seu espaço não é alterado. */
+  position: relative;
+  top: -25px;
+}
+
+.about-container p {
+  max-width: 460px;
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 1.4em;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .about-container {
+    max-width: 720px;
+  }
+
+  .about-item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .about-container {
+    max-width: 300px;
+  }
+
+  .about-item {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

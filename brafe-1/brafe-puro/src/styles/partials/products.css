@@ -1,0 +1,101 @@
+.products {
+  background-color: #e7e4d8;
+  padding: 60px 0;
+  border: 3px solid #d6d3c8;
+  border-left: none;
+  border-right: none;
+}
+
+.products-container {
+  max-width: 960px;
+  /* O margin está sendo usado para centralizar o elemento. */
+  margin: 0 auto;
+}
+
+/* Está aplicando o clearfix para que os elementos filhos do products-container não fiquem flutuando e assim o container não tenha altura 0. */
+.products-container::after,
+.products-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.products-item {
+  width: 300px;
+  /* O float left está sendo usado para alinhar os elementos lado a lado. */
+  float: left;
+  margin: 0 10px 20px 10px;
+}
+
+.products-item h2 {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.products-item h2::before {
+  content: "";
+  /* O display block está sendo usado para que o elemento ocupe a linha inteira. */
+  display: block;
+  width: 100px;
+  height: 100px;
+  /* O currentColor está sendo usado para que a cor do elemento seja a mesma do texto. */
+  background-color: currentColor;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid #e7e4d8;
+  /* O currentColor está sendo usado para que a cor do elemento seja a mesma do texto. */
+  box-shadow: 0 0 0 10px currentColor;
+}
+
+.products-paulista::before {
+  color: #492901;
+}
+
+.products-carioca::before {
+  color: #c17139;
+}
+
+.products-mineiro::before {
+  color: #d7a54d;
+}
+
+.products-item p {
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+
+.products-btn {
+  width: 180px;
+  /* O currentColor está sendo usado para que a cor do elemento seja a mesma do texto. */
+  border: 3px solid currentColor;
+  color: #252525;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  margin: 20px auto 0 auto;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .products-container {
+    max-width: 720px;
+  }
+
+  .products-item {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .products-container {
+    max-width: 300px;
+  }
+
+  .products-item {
+    margin: 0 auto;
+    margin: 0 auto 20px auto;
+  }
+}

@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Brafé</title>
   </head>
@@ -13,6 +18,7 @@
         <a href="#" class="menu-logo">
           <img src="./src/assets/brafe.png" alt="Brafé" />
         </a>
+
         <nav class="menu-nav">
           <ul>
             <li><a href="#">Sobre</a></li>
@@ -32,18 +38,20 @@
       <p>Direto das fazendas de Minas Gerais</p>
     </main>
 
-    <section>
+    <section class="about">
       <h2>Uma mistura de</h2>
 
-      <div>
-        <div>
+      <div class="about-container">
+        <div class="about-item">
           <img src="./src/assets/cafe-1.jpg" alt="Café 1" />
           <h3>Amor</h3>
         </div>
-        <div>
+
+        <div class="about-item">
           <img src="./src/assets/cafe-2.jpg" alt="Café 2" />
           <h3>Perfeição</h3>
         </div>
+
         <p>
           O café é uma bebida produzida a partir dos grãos torrados do fruto do
           cafeeiro. É servido tradicionalm aente quente, mas também pode ser
@@ -54,26 +62,29 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <div>
-          <h2>Paulista</h2>
+    <section class="products">
+      <div class="products-container">
+        <div class="products-item">
+          <h2 class="products-paulista">Paulista</h2>
+
           <p>
             As condições climáticas não eram as melhores nessa primeira escolha
             e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João
             Alberto Castelo Branco trouxe mudas do Pará
           </p>
         </div>
-        <div>
-          <h2>Carioca</h2>
+        <div class="products-item">
+          <h2 class="products-carioca">Carioca</h2>
+
           <p>
             As condições climáticas não eram as melhores nessa primeira escolha
             e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João
             Alberto Castelo Branco trouxe mudas do Pará
           </p>
         </div>
-        <div>
-          <h2>Mineiro</h2>
+        <div class="products-item">
+          <h2 class="products-mineiro">Mineiro</h2>
+
           <p>
             As condições climáticas não eram as melhores nessa primeira escolha
             e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João
@@ -81,70 +92,76 @@
           </p>
         </div>
       </div>
-      <a href="#">Saiba mais</a>
+
+      <a class="products-btn" href="#">Saiba mais</a>
     </section>
 
-    <section>
-      <div>
+    <section class="locations">
+      <div class="locations-item">
         <img src="./src/assets/botafogo.jpg" alt="Brafé unidade Botafogo" />
+
         <div>
           <h2>Botafogo</h2>
           <p>
             As condições climáticas não eram as melhores nessa primeira escolha
             e, entre 1800 e 1850, tentou-se o cultivo.
           </p>
+
           <a href="#">Ver mapa</a>
         </div>
       </div>
 
-      <div>
+      <div class="locations-item">
         <img src="./src/assets/iguatemi.jpg" alt="Brafé unidade Iguatemi" />
+
         <div>
           <h2>Iguatemi</h2>
           <p>
             As condições climáticas não eram as melhores nessa primeira escolha
             e, entre 1800 e 1850, tentou-se o cultivo.
           </p>
+
           <a href="#">Ver mapa</a>
         </div>
       </div>
 
-      <div>
+      <div class="locations-item">
         <img src="./src/assets/mineirao.jpg" alt="Brafé unidade Mineirão" />
+
         <div>
           <h2>Mineirão</h2>
           <p>
             As condições climáticas não eram as melhores nessa primeira escolha
             e, entre 1800 e 1850, tentou-se o cultivo.
           </p>
+
           <a href="#">Ver mapa</a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div>
-        <div>
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-info">
           <h2>Assine nossa newsletter</h2>
           <p>promoções e eventos mensais</p>
         </div>
+
         <form action="#">
           <label for="email">Email</label>
-          <input type="email" placeholder="Digite seu e-mail" />
+          <input type="email" placeholder="Digite seu e-mail" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
     </section>
 
-    <footer>
-      <div>
-        <div>
-          <p>
-            Este é um projeto da Origamid. Mais em origamid.com<br />Praia de
-            Botafogo, 300, 5º andar - Botafogo - Rio de Janeiro
-          </p>
-          <img src="./src/assets/brafe.png" alt="Brafé" />
-        </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>
+          Este é um projeto da Origamid. Mais em origamid.com<br />Praia de
+          Botafogo, 300, 5º andar - Botafogo - Rio de Janeiro
+        </p>
+        <img src="./src/assets/brafe.png" alt="Brafé" />
       </div>
     </footer>
   </body>

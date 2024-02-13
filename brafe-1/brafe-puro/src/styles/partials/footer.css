@@ -1,0 +1,48 @@
+.footer {
+  background-color: #d6d3c8;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  /* O margin está sendo usado para centralizar o elemento. */
+  margin: 0 auto;
+}
+
+/* Está aplicando o clearfix para que os elementos filhos do footer-container não fiquem flutuando e assim o container não tenha altura 0. */
+.footer-container::after,
+.footer-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer p {
+  /* O float left está sendo aplicado para que o texto fique ao lado da imagem. */
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.footer img {
+  /* O float left está sendo aplicado para que a imagem fique ao lado do texto. */
+  float: right;
+  margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+  .footer-container {
+    max-width: 300px;
+  }
+
+  .footer p {
+    float: none;
+    margin: 0;
+  }
+
+  .footer img {
+    float: none;
+    margin: 20px 0;
+  }
+}
