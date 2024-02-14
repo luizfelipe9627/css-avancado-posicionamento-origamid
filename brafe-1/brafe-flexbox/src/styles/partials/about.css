@@ -13,9 +13,15 @@
   line-height: 1.4em;
   font-style: italic;
   max-width: 460px;
-  text-align: center;
   /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 20px auto;
+	text-align: center;
+}
+
+.about-item {
+  /* O flex 1 faz com que o item ocupe 100% do espaço disponível */
+  flex: 1;
+  margin: 0 10px;
 }
 
 .about-item h3 {
@@ -25,11 +31,11 @@
   color: #fff;
   font-style: italic;
   font-weight: normal;
+  text-transform: lowercase;
   text-align: center;
   /* O position relative está sendo usado para que fique relativo ao elemento pai, sendo assim, o elemento filho pode ser posicionado em relação ao elemento pai mas seu espaço não é alterado. */
   position: relative;
-  text-transform: lowercase;
   width: 220px;
-  padding: 5px 0 10px 0;
+  padding: 5px 0 10px;
   top: -25px;
 }

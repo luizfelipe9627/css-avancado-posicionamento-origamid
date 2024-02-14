@@ -4,8 +4,7 @@
 
 .about-container {
   max-width: 960px;
-  /* O margin está sendo usado para centralizar o elemento. */
-
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 0 auto;
 }
 
@@ -20,6 +19,16 @@
 .about h2 {
   font-size: 2.25em;
   margin-bottom: 60px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 460px;
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 1.4em;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -46,15 +55,6 @@
   top: -25px;
 }
 
-.about-container p {
-  max-width: 460px;
-  font-size: 1.125em;
-  font-style: italic;
-  line-height: 1.4em;
-  margin: 20px auto;
-  text-align: center;
-}
-
 @media (min-width: 740px) and (max-width: 980px) {
   .about-container {
     max-width: 720px;
@@ -72,6 +72,7 @@
 
   .about-item {
     width: 300px;
+    /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
     margin: 0 auto;
   }
 }

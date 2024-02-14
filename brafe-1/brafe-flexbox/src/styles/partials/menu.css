@@ -1,0 +1,25 @@
+.menu {
+  background: #252525;
+  padding: 15px 0;
+}
+
+.menu-nav {
+  /* O flex 1 está sendo usado para que o elemento ocupe 100% do espaço disponível. */
+  flex: 1;
+  /* O align-self center está sendo usado para que o elemento fique centralizado verticalmente. */
+  align-self: center;
+}
+
+.menu-nav ul {
+  display: flex;
+	justify-content: flex-end;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em;
+  padding: 10px;
+}
+
+

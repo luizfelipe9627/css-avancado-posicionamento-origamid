@@ -5,7 +5,7 @@
 
 .footer-container {
   max-width: 960px;
-  /* O margin está sendo usado para centralizar o elemento. */
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 0 auto;
 }
 

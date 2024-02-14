@@ -1,0 +1,122 @@
+/* Classe utilitária para centralizar o elemento. */
+.container {
+  max-width: 960px;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 0 auto;
+}
+
+/* Está limpando o float dos elementos filhos do container. */
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+  - Como calcular a largura das colunas em porcentagem?
+
+  - A fórmula é: 100%(largura total do container) / 12(número total de colunas) * n(número de colunas que deseja ocupar).
+  - Exemplo: 100% / 12 * 3 = 25%. Essa fórmula calcula a largura de 3 colunas.
+*/
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  display: block;
+  float: left;
+  /* Está aplicando um gap de 10px entre os elementos. */
+  margin: 0 10px;
+  min-height: 1px;
+}
+
+.grid-1 {
+  /* O calc está fazendo o cálculo da largura de 1 coluna menos 20px de gap e aplicando como largura. */
+  width: calc(8.333% - 20px);
+}
+
+.grid-2 {
+  /* O calc está fazendo o cálculo da largura de 2 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(16.666% - 20px);
+}
+
+.grid-3 {
+  /* O calc está fazendo o cálculo da largura de 3 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(25% - 20px);
+}
+
+.grid-4 {
+  /* O calc está fazendo o cálculo da largura de 4 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(33.333% - 20px);
+}
+
+.grid-5 {
+  /* O calc está fazendo o cálculo da largura de 5 colunas menos 20px de gap. */
+  width: calc(41.666% - 20px);
+}
+
+.grid-6 {
+  /* O calc está fazendo o cálculo da largura de 6 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(50% - 20px);
+}
+
+.grid-7 {
+  /* O calc está fazendo o cálculo da largura de 7 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(58.333% - 20px);
+}
+
+.grid-8 {
+  /* O calc está fazendo o cálculo da largura de 8 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(66.666% - 20px);
+}
+
+.grid-9 {
+  /* O calc está fazendo o cálculo da largura de 9 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(75% - 20px);
+}
+
+.grid-10 {
+  /* O calc está fazendo o cálculo da largura de 10 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(83.333% - 20px);
+}
+
+.grid-11 {
+  /* O calc está fazendo o cálculo da largura de 11 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(91.666% - 20px);
+}
+
+.grid-12 {
+  /* O calc está fazendo o cálculo da largura de 12 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(100% - 20px);
+}
+
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7,
+  .grid-8,
+  .grid-9,
+  .grid-10,
+  .grid-11,
+  .grid-12 {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}

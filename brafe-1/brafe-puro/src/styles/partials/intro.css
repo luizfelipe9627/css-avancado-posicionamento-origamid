@@ -13,11 +13,12 @@
 
 .intro h1::after {
   content: "";
+  /* O display block está sendo usado para que o elemento ocupe a linha inteira. */
   display: block;
   width: 20px;
   height: 4px;
   background-color: #fff;
-  /* O margin está sendo usado para centralizar o elemento. */
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 10px auto;
 }
 

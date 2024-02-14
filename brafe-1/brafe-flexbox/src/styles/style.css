@@ -2,9 +2,6 @@
 @import url("./common/reset.css");
 @import url("./common/global.css");
 
-/* Utilitários */
-@import url("./utils/grid.css");
-
 /* Sessões principais */
 @import url("./partials/menu.css");
 @import url("./partials/intro.css");

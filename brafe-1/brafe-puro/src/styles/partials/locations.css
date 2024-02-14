@@ -1,6 +1,6 @@
 .locations {
   max-width: 960px;
-  /* O margin está sendo usado para centralizar o elemento. */
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -8,6 +8,7 @@
 .locations-item {
   /* O clear both está sendo aplicado no elemento .locations-item para que ele não fique ao lado do elemento anterior */
   clear: both;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 60px auto;
 }
 

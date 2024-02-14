@@ -1,0 +1,17 @@
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  /* O display flex faz com que os elementos filhos se comportem como flex-items e faz com que os filhos fiquem em linha(um do lado do outro) */
+  display: flex;
+  max-width: 960px;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 0 auto;
+}

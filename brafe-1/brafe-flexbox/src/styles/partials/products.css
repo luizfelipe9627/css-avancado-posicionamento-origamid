@@ -6,7 +6,9 @@
 }
 
 .products-item {
-  margin-bottom: 60px;
+  margin: 0 10px 40px 10px;
+  /* O flex 1 faz com que o item ocupe 100% do espaço disponível */
+  flex: 1;
 }
 
 .products-item h2 {
@@ -25,7 +27,12 @@
   border: 5px solid #e7e4d8;
   box-shadow: 0 0 0 5px currentColor;
   /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
-  margin: 10px auto;
+  margin: 20px auto;
+}
+
+.products-item p {
+  font-size: 0.875em;
+  line-height: 1.4em;
 }
 
 .products-paulista::before {
@@ -38,11 +45,6 @@
 
 .products-mineiro::before {
   color: #d7a54d;
-}
-
-.products-item p {
-  font-size: 0.875em;
-  line-height: 1.4em;
 }
 
 .products-btn {
@@ -58,5 +60,5 @@
   /* O display block está sendo usado para que o elemento ocupe a linha inteira. */
   display: block;
   /* O margin 0 auto está sendo usado para centralizar o elemento. */
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
