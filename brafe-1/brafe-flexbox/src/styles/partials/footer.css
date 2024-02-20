@@ -1,8 +1,27 @@
 .footer {
-	background: #d6d3c8;
+  background: #d6d3c8;
+  padding: 40px 0;
 }
 
 .footer p {
-	font-size: 1.125em;
-	line-height: 1.4em;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  margin: 0 10px;
+  /* O flex 1 faz com que o item ocupe 100% do espaço disponível */
+  flex: 1;
+}
+
+.footer-img {
+  /* O display flex faz com que os elementos filhos se comportem como flex-items */
+  display: flex;
+  /* o align-items center faz com que os elementos filhos fiquem alinhados no centro do eixo vertical(de cima para baixo) */
+  align-items: center;
+  margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+  .footer p,
+  .footer-img {
+    margin: 10px 0;
+  }
 }

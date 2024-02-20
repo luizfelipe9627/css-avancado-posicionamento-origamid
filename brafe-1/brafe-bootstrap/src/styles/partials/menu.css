@@ -1,0 +1,42 @@
+.menu {
+  background: #252525;
+  padding: 15px 0;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em;
+}
+
+.menu-nav ul {
+  /* O display flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: flex;
+  /* O justify-content flex-end está sendo usado para alinhar os elementos no final do container. */
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.menu-nav ul li {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: inline-block;
+}
+
+.menu-nav ul li a {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-nav ul {
+    /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+    display: inline-block;
+  }
+
+  .menu-nav ul li a {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

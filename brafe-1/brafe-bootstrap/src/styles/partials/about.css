@@ -1,0 +1,39 @@
+.about {
+  padding: 60px 0;
+}
+
+.about h2 {
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.about-item h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  background: #252525;
+  color: #fff;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  /* O position relative está sendo usado para que fique relativo ao elemento pai, sendo assim, o elemento filho pode ser posicionado em relação ao elemento pai mas seu espaço não é alterado. */
+  position: relative;
+  width: 220px;
+  padding: 5px 0 10px 0;
+  top: -25px;
+  text-transform: lowercase;
+}
+
+.about p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  font-style: italic;
+  max-width: 460px;
+  text-align: center;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+}

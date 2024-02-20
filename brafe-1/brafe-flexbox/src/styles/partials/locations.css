@@ -2,13 +2,27 @@
   padding: 60px 0;
 }
 
+.locations-item {
+  margin-bottom: 40px;
+}
+
+.locations-img,
+.locations-info {
+  /* O flex 1 está sendo usado para que o elemento ocupe 100% do espaço disponível. */
+  flex: 1;
+  margin: 0 10px;
+}
+
 .locations-item h2 {
   font-size: 2.25em;
+  margin-bottom: 20px;
 }
 
 .locations-item p {
   font-size: 1.125em;
   line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
 }
 
 .locations-item a {
@@ -17,4 +31,12 @@
   text-decoration: none;
   border: 3px solid;
   color: #252525;
+  padding: 10px 20px;
+}
+
+@media (max-width: 739px) {
+  .locations-img,
+  .locations-info {
+    margin: 0;
+  }
 }

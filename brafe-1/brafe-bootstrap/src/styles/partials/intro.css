@@ -1,0 +1,34 @@
+.intro {
+  background: url("../../assets/bg-intro.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.intro h1::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 20px auto;
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 1.125em;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 60px 0;
+  }
+}

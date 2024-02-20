@@ -15,3 +15,10 @@ img {
   /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 0 auto;
 }
+
+@media (max-width: 739px) {
+  .container {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}

@@ -15,7 +15,7 @@
   max-width: 460px;
   /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
   margin: 20px auto;
-	text-align: center;
+  text-align: center;
 }
 
 .about-item {
@@ -38,4 +38,10 @@
   width: 220px;
   padding: 5px 0 10px;
   top: -25px;
+}
+
+@media (max-width: 739px) {
+  .about-item {
+    margin: 0;
+  }
 }

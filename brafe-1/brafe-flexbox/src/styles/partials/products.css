@@ -62,3 +62,10 @@
   /* O margin 0 auto está sendo usado para centralizar o elemento. */
   margin: 20px auto 0 auto;
 }
+
+@media (max-width: 739px) {
+  .products-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

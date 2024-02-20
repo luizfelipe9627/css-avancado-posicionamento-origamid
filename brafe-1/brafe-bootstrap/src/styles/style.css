@@ -1,0 +1,15 @@
+/* Estilos globais */
+@import url("./common/reset.css");
+@import url("./common/global.css");
+
+/* Utilitários */
+@import url("./utils/grid.css");
+
+/* Sessões principais */
+@import url("./partials/menu.css");
+@import url("./partials/intro.css");
+@import url("./partials/about.css");
+@import url("./partials/products.css");
+@import url("./partials/locations.css");
+@import url("./partials/newsletter.css");
+@import url("./partials/footer.css");
