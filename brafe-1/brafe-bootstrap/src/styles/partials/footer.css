@@ -1,8 +1,21 @@
 .footer {
-	background: #d6d3c8;
+  background: #d6d3c8;
+  padding: 40px 0;
 }
 
 .footer p {
-	font-size: 1.125em;
-	line-height: 1.4em;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.footer img {
+  /* O float right faz com que a imagem fique no canto direito do footer */
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .footer img {
+    float: none;
+    margin-top: 20px;
+  }
 }

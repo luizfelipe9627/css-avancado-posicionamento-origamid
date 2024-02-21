@@ -1,5 +1,6 @@
 .about {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about h2 {
@@ -35,5 +36,6 @@
   margin: 20px auto;
 }
 
-@media (max-width: 768px) {
+.about img {
+  width: 100%;
 }

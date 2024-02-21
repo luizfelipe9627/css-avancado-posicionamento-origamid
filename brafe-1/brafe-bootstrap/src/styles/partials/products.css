@@ -1,47 +1,69 @@
 .products {
-	background: #e7e4d8;
-	border-top: 3px solid #d6d3c8;
-	border-bottom: 3px solid #d6d3c8;
+  background: #e7e4d8;
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+  padding: 60px 0;
+}
+
+.products-item {
+  margin-bottom: 40px;
 }
 
 .products-item h2 {
-	font-size: 2.25em;
-}
-
-.products-item h2::before {
-	content: '';
-	display: block;
-	width: 100px;
-	height: 100px;
-	background: currentColor;
-	border-radius: 50%;
-	border: 5px solid #e7e4d8;
-	box-shadow: 0 0 0 5px currentColor;
-}
-
-.products-paulista::before {
-	color: #492901;
-}
-
-.products-carioca::before {
-	color: #c17139;
-}
-
-.products-mineiro::before {
-	color: #d7a54d;
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .products-item p {
-	font-size: 0.875em;
-	line-height: 1.4em;
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+
+.products-item h2::before {
+  content: "";
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  border: 5px solid #e7e4d8;
+  box-shadow: 0 0 0 5px currentColor;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 20px auto;
+}
+
+.products-paulista::before {
+  color: #492901;
+}
+
+.products-carioca::before {
+  color: #c17139;
+}
+
+.products-mineiro::before {
+  color: #d7a54d;
 }
 
 .products-btn {
-	border: 3px solid #252525;
-	color: #252525;
+  border: 3px solid #252525;
+  color: #252525;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 180px;
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
+  display: block;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 20px auto 0 auto;
+  padding: 15px 0;
+}
+
+.products-btn:hover {
 	text-decoration: none;
-	text-align: center;
-	font-size: 1.125em;
-	font-weight: bold;
-	text-transform: uppercase;
+	color: #252525;
 }

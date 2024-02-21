@@ -1,34 +1,48 @@
 .newsletter {
-	background: #e7e4d8;
+  background: #e7e4d8;
+  padding: 30px 0;
 }
 
 .newsletter-info h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
+  font-weight: bold;
 }
 
 .newsletter-info p {
-	font-size: 1.5em;
-	font-style: italic;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.newsletter form {
+  margin-top: 10px;
+  /* O display flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: flex;
+  /* O flex-wrap: wrap está sendo usado para que os elementos filhos quebrem linha quando não couberem mais no container pai. */
+  flex-wrap: wrap;
+	/* O align-content flex-start está sendo usado para que os elementos filhos fiquem alinhados no início do container pai. */
+  align-content: flex-start;
 }
 
 .newsletter form label {
-	display: none;
+  display: none;
 }
 
 .newsletter input {
-	border: 3px solid #252525;
-	background: none;
-	font-size: 1.5em;
-	font-style: italic;
-	font-family: Georgia, serif;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, serif;
+	padding: 10px;
 }
 
 .newsletter button {
-	background: #252525;
-	border: none;
-	font-family: Georgia, serif;
-	text-transform: uppercase;
-	font-size: 1.5em;
-	color: #fff;
-	cursor: pointer;
+  background: #252525;
+  border: none;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+	padding: 13px;
 }

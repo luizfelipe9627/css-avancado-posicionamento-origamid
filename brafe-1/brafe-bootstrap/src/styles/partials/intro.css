@@ -14,6 +14,7 @@
 
 .intro h1::after {
   content: "";
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
   display: block;
   width: 20px;
   height: 4px;

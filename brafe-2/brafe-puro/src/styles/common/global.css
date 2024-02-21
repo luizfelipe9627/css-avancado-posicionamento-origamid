@@ -1,0 +1,9 @@
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
