@@ -1,0 +1,7 @@
+/* Estilos globais */
+@import url("./common/reset.css");
+@import url("./common/global.css");
+
+/* Sessões principais */
+@import url("./partials/header.css");
+@import url("./partials/side-nav.css");

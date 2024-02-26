@@ -1,0 +1,58 @@
+.side-nav {
+  width: 300px;
+  background-color: #252525;
+  /* O float left faz com que o elemento flutue para a esquerda, ficando no lado oposto dos produtos. */
+  float: left;
+}
+
+.side-nav li a {
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
+  display: block;
+  color: #fff;
+  border-bottom: 2px solid #484846;
+  font-size: 1.125rem;
+  padding: 20px;
+}
+
+.side-nav li a::before {
+  content: "";
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  /* O position relative está sendo usado para que fique relativo ao elemento pai, sendo assim, o elemento filho pode ser posicionado em relação ao elemento pai mas seu espaço não é alterado. */
+  position: relative;
+  top: 5px;
+  background-image: url("../../assets/icones.png");
+}
+
+.nav-contabilidade::before {
+  /* O background-position está definindo a posição vertical da imagem de fundo com o valor de 0. */
+  background-position: 0 0;
+}
+
+.nav-produtos::before {
+  /* O background-position está definindo a posição vertical da imagem de fundo com o valor de 24px. */
+  background-position: 0 -24px;
+}
+
+.nav-paginas::before {
+  /* O background-position está definindo a posição vertical da imagem de fundo com o resultado da multiplicação de 24px por 2. */
+  background-position: 0 calc(-24px * 2);
+}
+
+.nav-plugins::before {
+  /* O background-position está definindo a posição vertical da imagem de fundo com o resultado da multiplicação de 24px por 3. */
+  background-position: 0 calc(-24px * 3);
+}
+
+.nav-formularios::before {
+  /* O background-position está definindo a posição vertical da imagem de fundo com o resultado da multiplicação de 24px por 4. */
+  background-position: 0 calc(-24px * 4);
+}
+
+.nav-hospedagens::before {
+  /* O background-position está definindo a posição vertical da imagem de fundo com o resultado da multiplicação de 24px por 5. */
+  background-position: 0 calc(-24px * 5);
+}

@@ -14,7 +14,7 @@ img {
   margin: 0 auto;
 }
 
-/* O clearfix é uma técnica para fazer com que um elemento pai se expanda para conter os floats dos seus filhos. */
+/* Quando todos os elementos filhos de .container são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
 .container::after,
 .container::before {
   content: "";

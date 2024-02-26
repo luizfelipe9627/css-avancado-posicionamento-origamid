@@ -12,7 +12,7 @@
   margin: 60px auto;
 }
 
-/* Está aplicando o clearfix para que os elementos filhos do locations-item não fiquem flutuando e assim o item não tenha altura 0. */
+/* Quando todos os elementos filhos de .locations-item são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
 .locations-item::after,
 .locations-item::before {
   content: "";

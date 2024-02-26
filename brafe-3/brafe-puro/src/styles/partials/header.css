@@ -1,0 +1,38 @@
+.header {
+  background-color: #d6d3c8;
+  padding: 20px;
+}
+
+/* Quando todos os elementos filhos de .header são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
+.header::after,
+.header::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-logo {
+  /* O float left faz com que o elemento flutue para a esquerda, ficando no lado oposto do menu. */
+  float: left;
+}
+
+.header-menu ul {
+  /* O float right faz com que o elemento flutue para a direita, ficando no lado oposto do logo. */
+  float: right;
+}
+
+.header-menu ul li {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
+  display: inline-block;
+}
+
+.header-menu ul li a {
+  color: #252525;
+  font-size: 1.125em;
+  padding: 0 10px;
+}
+
+/* Está selecionando o primeiro elemento li e falando com o a dentro dele. */
+.header-menu ul li:first-child a {
+  padding-left: 0;
+}

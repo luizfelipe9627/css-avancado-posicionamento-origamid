@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-/* Está aplicando o clearfix para que os elementos filhos do newsletter-container não fiquem flutuando e assim o container não tenha altura 0. */
+/* Quando todos os elementos filhos de .newsletter-container são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
 .newsletter-container::after,
 .newsletter-container::before {
   content: "";

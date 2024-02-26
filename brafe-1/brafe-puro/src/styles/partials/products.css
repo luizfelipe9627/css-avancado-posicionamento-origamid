@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 
-/* Está aplicando o clearfix para que os elementos filhos do products-container não fiquem flutuando e assim o container não tenha altura 0. */
+/* Quando todos os elementos filhos de .products-container são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
 .products-container::after,
 .products-container::before {
   content: "";
