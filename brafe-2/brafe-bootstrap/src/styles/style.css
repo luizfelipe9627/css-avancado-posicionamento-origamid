@@ -1,4 +1,5 @@
 /* Estilos globais */
+@import url("./utils/bootstrap.min.css");
 @import url("./common/reset.css");
 @import url("./common/global.css");
 

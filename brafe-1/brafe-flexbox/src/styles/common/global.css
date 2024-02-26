@@ -18,7 +18,8 @@ img {
 
 @media (max-width: 739px) {
   .container {
-    flex-direction: column;
     max-width: 300px;
+    /* O flex-direction column está sendo usado para que os elementos fiquem um embaixo do outro. */
+    flex-direction: column;
   }
 }

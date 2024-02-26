@@ -1,0 +1,79 @@
+.filter {
+  background-color: #e7e4d8;
+  border: 3px solid #d6d3c8;
+  padding: 20px;
+  /* O align-self flex-start está sendo usado para que os elementos filhos fiquem alinhados no início do container pai. */
+  align-self: flex-start;
+}
+
+.filter h2 {
+  font-size: 1.125em;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.filter ul {
+  border-top: 3px solid #c0beb4;
+  border-bottom: 3px solid #c0beb4;
+  padding: 10px 0;
+}
+
+.filter ul li {
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 2;
+}
+
+.filter ul li::after {
+  content: "";
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #c0beb4;
+  /* O float right faz com que o elemento fique à direita do elemento pai. */
+  float: right;
+  margin-top: 5px;
+}
+
+.flavor {
+  overflow: hidden;
+}
+
+.flavor span {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
+  display: inline-block;
+  /* O text-indent está sendo usado para que o texto fique recuado(afastado da borda) */
+  text-indent: -200px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: currentColor;
+  /* O vertical-align está sendo usado para que o elemento fique alinhado verticalmente ao texto. */
+  vertical-align: middle;
+}
+
+.flavor-3 {
+  /* Está criando uma sombra para a esquerda do elemento, tendo 20px de deslocamento para a esquerda, 0 de deslocamento para cima, 0 de deslocamento para baixo e 0 de deslocamento para a direita. */
+  box-shadow: 20px 0 0 0, 40px 0 0 0;
+  color: #492901;
+}
+
+.flavor-4 {
+  /* Está criando uma sombra para a esquerda do elemento, tendo 20px de deslocamento para a esquerda, 0 de deslocamento para cima, 0 de deslocamento para baixo e 0 de deslocamento para a direita. */
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0;
+  color: #c17139;
+}
+
+.flavor-5 {
+  /* Está criando uma sombra para a esquerda do elemento, tendo 20px de deslocamento para a esquerda, 0 de deslocamento para cima, 0 de deslocamento para baixo e 0 de deslocamento para a direita. */
+  box-shadow: 20px 0 0 0 currentColor, 40px 0 0 0 currentColor,
+    60px 0 0 0 currentColor, 80px 0 0 0 currentColor;
+  color: #d7a54d;
+}
+
+@media (max-width: 768px) {
+  .filter {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.header-infos {
+  font-size: 0.875em;
+  background-color: #d6d3c8;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.header-logo img {
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
+  display: block;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 40px auto;
+}

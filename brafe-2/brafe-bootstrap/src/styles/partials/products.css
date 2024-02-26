@@ -1,0 +1,27 @@
+.products h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.products li img {
+  border: 3px solid #fff;
+  /* Faz uma sombra para dar um efeito de uma borda flutuante. */
+  box-shadow: 0 0 0 3px #252525;
+  margin: 40px 3px 0 3px;
+  width: 100%;
+}
+
+.products li span {
+  font-size: 0.875eem;
+  font-weight: bold;
+  background-color: #e7e4d8;
+  padding: 10px;
+  /* O position relative está sendo usado para que fique relativo ao elemento pai, sendo assim, o elemento filho pode ser posicionado em relação ao elemento pai mas seu espaço não é alterado. */
+  position: relative;
+  top: -15px;
+}
+
+.products li h2 {
+  font-size: 0.875rem;
+  font-weight: normal;
+}

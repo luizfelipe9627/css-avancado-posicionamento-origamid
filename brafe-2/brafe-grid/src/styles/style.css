@@ -1,4 +1,5 @@
 /* Estilos globais */
+@import url("./utils/grid.css");
 @import url("./common/reset.css");
 @import url("./common/global.css");
 

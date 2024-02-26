@@ -7,3 +7,29 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.container {
+  max-width: 960px;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 0 auto;
+}
+
+/* O clearfix é uma técnica para fazer com que um elemento pai se expanda para conter os floats dos seus filhos. */
+.container::after,
+.container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+}

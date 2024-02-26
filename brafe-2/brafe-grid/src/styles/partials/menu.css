@@ -1,0 +1,30 @@
+.header-menu {
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.header-menu ul li {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
+  display: inline-block;
+}
+
+.header-menu li a {
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
+  display: block;
+  padding: 5px 10px 5px 0;
+  color: #252525;
+  font-size: 1.125em;
+}
+
+.header-menu li a::before {
+  content: "•";
+  padding-right: 10px;
+}
+
+/* Está pegando a primeira li e dentro dela o a e por fim pegando o ::before. */
+.header-menu li:first-child a::before {
+  content: "";
+}

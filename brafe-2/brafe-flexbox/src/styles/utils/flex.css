@@ -1,0 +1,76 @@
+/* Classe utilitária para centralizar o elemento e tornar o elemento pai um flex container. */
+.flex {
+  display: flex;
+  max-width: 960px;
+  /* Está aplicando auto no left e right, fazendo com que o elemento fique centralizado. */
+  margin: 0 auto;
+  /* O flex-wrap: wrap está sendo usado para que os elementos filhos quebrem linha quando não couberem mais no container pai. */
+  flex-wrap: wrap;
+}
+
+/*
+  - Como calcular a largura das colunas em porcentagem?
+
+  - A fórmula é: 100%(largura total do container) / 12(número total de colunas) * n(número de colunas que deseja ocupar).
+  - Exemplo: 100% / 12 * 3 = 25%. Essa fórmula calcula a largura de 3 colunas.
+*/
+
+.flex-item-4,
+.flex-item-6,
+.flex-item-8 {
+  margin-left: 10px;
+  margin-right: 10px;
+  /* O align-self flex-start está sendo usado para que os elementos filhos fiquem alinhados no início do container pai. */
+  align-self: flex-start;
+}
+
+.flex-item-4 {
+  /* O flex recebe três valores: flex-grow, flex-shrink e flex-basis, sendo que o flex-basis é o responsável por definir o tamanho do elemento. */
+  flex: 0 0 calc(33.333% - 20px);
+  /* Caso o flex falhe, o width será aplicado, garantindo que o elemento ocupe o espaço definido. */
+  max-width: calc(33.333% - 20px);
+}
+
+.flex-item-6 {
+  /* O flex recebe três valores: flex-grow, flex-shrink e flex-basis, sendo que o flex-basis é o responsável por definir o tamanho do elemento. */
+  flex: 0 0 calc(50% - 20px);
+  /* Caso o flex falhe, o width será aplicado, garantindo que o elemento ocupe o espaço definido. */
+  max-width: calc(50% - 20px);
+}
+
+.flex-item-8 {
+  /* Está falando que o elemento deve ocupar 66.666% do container pai menos os 20px de margin-left e margin-right. */
+  flex: 0 0 calc(66.666% - 20px);
+  /* Caso o flex falhe, o width será aplicado, garantindo que o elemento ocupe o espaço definido. */
+  max-width: calc(66.666% - 20px);
+}
+
+/* O flex-row está sendo usado para que os elementos filhos do flex-item fiquem alinhados horizontalmente. */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.flex-row::after {
+  display: block;
+  content: "";
+  flex: auto;
+}
+
+@media (max-width: 739px) {
+  .flex {
+    max-width: 300px;
+    /* O flex-direction column está sendo usado para que os elementos fiquem um embaixo do outro. */
+    flex-direction: column;
+  }
+
+  .flex-item-4,
+  .flex-item-8 {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    align-self: auto;
+  }
+}

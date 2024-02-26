@@ -26,13 +26,16 @@
 .grid-4,
 .grid-5,
 .grid-6,
+.grid-mobile-6,
 .grid-7,
 .grid-8,
 .grid-9,
 .grid-10,
 .grid-11,
 .grid-12 {
+  /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
   display: block;
+  /* O float left está fazendo com que os elementos fiquem lado a lado. */
   float: left;
   /* Está aplicando um gap de 10px entre os elementos. */
   margin-left: 10px;
@@ -100,6 +103,28 @@
   width: calc(100% - 20px);
 }
 
+.grid-mobile-6 {
+  /* O calc está fazendo o cálculo da largura de 6 colunas menos 20px de gap e aplicando como largura. */
+  width: calc(50% - 20px);
+}
+
+/* O row está sendo usado para que os elementos filhos do grid e do grid-mobile fiquem alinhados horizontalmente. */
+.row,
+.row-mobile {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* O clearfix é uma técnica para fazer com que um elemento pai se expanda para conter os floats dos seus filhos. */
+.row::after,
+.row-mobile::after,
+.row::before,
+.row-mobile::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (max-width: 739px) {
   .container {
     max-width: 300px;
@@ -121,5 +146,10 @@
     margin-left: 0;
     margin-right: 0;
     float: none;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
