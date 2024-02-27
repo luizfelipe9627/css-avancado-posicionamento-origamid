@@ -1,4 +1,3 @@
-
 .products h1 {
   font-size: 3em;
   font-weight: normal;
@@ -9,6 +8,7 @@
   /* Faz uma sombra para dar um efeito de uma borda flutuante. */
   box-shadow: 0 0 0 3px #252525;
   margin: 40px 3px 0 3px;
+  /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
   width: 100%;
 }
 

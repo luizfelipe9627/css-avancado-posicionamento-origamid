@@ -8,3 +8,11 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Quando todos os elementos filhos de .container são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
+.container::after,
+.container::before {
+  content: "";
+  display: table;
+  clear: both;
+}

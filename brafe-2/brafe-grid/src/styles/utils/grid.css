@@ -142,6 +142,7 @@
   .grid-10,
   .grid-11,
   .grid-12 {
+    /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
     width: 100%;
     margin-left: 0;
     margin-right: 0;

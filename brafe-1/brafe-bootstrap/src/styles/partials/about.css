@@ -37,5 +37,6 @@
 }
 
 .about img {
+  /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
   width: 100%;
 }
