@@ -1,0 +1,22 @@
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+  background-color: #e7e4d8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  /* O display flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: flex;
+}
+
+@media (max-width: 739px) {
+  .container {
+    /* O flex-direction column está sendo usado para que os elementos fiquem um embaixo do outro. */
+    flex-direction: column;
+  }
+}

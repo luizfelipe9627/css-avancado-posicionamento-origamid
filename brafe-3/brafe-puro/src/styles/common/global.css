@@ -9,10 +9,14 @@ img {
   max-width: 100%;
 }
 
-/* Quando todos os elementos filhos de .container são flutuados, o elemento pai não tem mais altura, sendo assim sendo necessário limpar os floats, utilizando o clearfix. */
-.container::after,
-.container::before {
-  content: "";
-  display: table;
-  clear: both;
+.container {
+  /* O display flex está sendo usado para transformar o elemento pai em um flex container, para que os elementos filhos possam ser alinhados de acordo com as propriedades flexbox. */
+  display: flex;
+}
+
+@media (max-width: 739px) {
+  .container {
+    /* O flex-direction está sendo usado para definir a direção dos elementos filhos, no caso, a direção é coluna. */
+    flex-direction: column;
+  }
 }

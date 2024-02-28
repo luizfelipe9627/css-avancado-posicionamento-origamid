@@ -1,6 +1,4 @@
 .products {
-  /* O float left faz com que o elemento flutue para a esquerda, ficando no lado oposto do menu. */
-  float: left;
   /* Defini como largura 100% menos 300px, que é a largura dos produtos. */
   width: calc(100% - 300px);
   max-width: 960px;
@@ -17,26 +15,13 @@
   clear: both;
 }
 
-.products header {
-  /* O display inline-flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro), ocupem somente o espaço necessário(block) e que possam virar elementos flex. */
-  display: inline-flex;
-  /* O align-items está sendo usado para que os elementos fiquem alinhados verticalmente(deitados) no centro. */
-  align-items: center;
-  /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
-  width: 100%;
-}
-
 .products h1 {
   font-size: 2.25em;
   /* O float left faz com que o elemento flutue para a esquerda, ficando no lado oposto do botão. */
   float: left;
-  /* O flex 1 faz com que o item ocupe 100% do espaço disponível */
-  flex: 1;
 }
 
 .adicionar-produtos {
-  /* O float right faz com que o elemento flutue para a direita, ficando no lado oposto do título. */
-  float: right;
   background-color: #c17139;
   color: #e7e4d8;
   font-size: 1.125em;
@@ -45,15 +30,11 @@
   text-transform: uppercase;
   border-radius: 4px;
   text-align: center;
+  /* O float right faz com que o elemento flutue para a direita, ficando no lado oposto do título. */
+  float: right;
 }
 
 .products-item {
-  /* O display inline-flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro), ocupem somente o espaço necessário(block) e que possam virar elementos flex. */
-  display: inline-flex;
-  /* O align-items está sendo usado para que os elementos fiquem alinhados verticalmente(deitados) no centro. */
-  align-items: center;
-  /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
-  width: 100%;
   background-color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   margin-top: 20px;
@@ -67,11 +48,6 @@
   content: "";
   display: table;
   clear: both;
-}
-
-.products-item img {
-  /* O float left faz com que o elemento flutue para a esquerda, fazendo com que o texto fique ao lado da imagem. */
-  float: left;
 }
 
 .products-item a {
@@ -91,6 +67,11 @@
 .products-item a:hover {
   /* O background está sendo usado para que o elemento tenha uma imagem de fundo e que não se repita. */
   background: url("../../assets/edit-hover.svg") no-repeat;
+}
+
+.products-item img {
+  /* O float left faz com que o elemento flutue para a esquerda, ficando no lado oposto da lista. */
+  float: left;
 }
 
 .products-item ul {
@@ -118,4 +99,47 @@
   display: inline-block;
   font-weight: bold;
   width: 70px;
+}
+
+@media (max-width: 739px) {
+  .products {
+    /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
+    width: 100%;
+  }
+
+  .products h1 {
+    /* O float none está sendo usado para que o elemento não flutue. */
+    float: none;
+  }
+
+  .adicionar-produtos {
+    /* O float none está sendo usado para que o elemento não flutue. */
+    float: none;
+    /* O display inline-block está sendo usado para que o elemento fique em linha/inline(um do lado do outro) e que possa ocupar somente o espaço necessário(block). */
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .products-item {
+    /* O display block está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
+    display: block;
+  }
+
+  .products-item img,
+  .products-item ul {
+    /* O float none está sendo usado para que o elemento não flutue. */
+    float: none;
+  }
+
+  .products-item ul {
+    /* O width 100% está sendo usado para que o elemento ocupe toda a largura disponível do elemento pai. */
+    width: 100%;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .products {
+    /* Defini como largura 100% menos 200px, que é a largura dos produtos. */
+    width: calc(100% - 200px);
+  }
 }

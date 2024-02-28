@@ -1,9 +1,8 @@
 .side-nav {
-  width: 300px;
   background-color: #252525;
 }
 
-.side-nav ul li a {
+.side-nav li a {
   /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
   display: block;
   color: #fff;
@@ -12,7 +11,7 @@
   padding: 20px;
 }
 
-.side-nav ul li a::before {
+.side-nav li a::before {
   content: "";
   /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
   display: inline-block;
@@ -56,40 +55,7 @@
 }
 
 @media (max-width: 739px) {
-  .side-nav {
-    background-color: transparent;
-    /* O width auto está sendo usado para que o elemento ocupe somente o espaço necessário. */
-    width: auto;
-    margin: 20px 0 0 20px;
-  }
-
-  .side-nav ul li {
-    /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
-    display: inline-block;
-  }
-
-  .side-nav ul li a {
-    width: 44px;
-    height: 44px;
-    /* O overflow hidden está sendo usado para que o conteúdo que ultrapassar o tamanho do elemento seja ocultado, no caso oculta o texto. */
-    overflow: hidden;
-    padding: 10px;
-    border: none;
-    color: #252525;
-    background-color: #252525;
-    border-radius: 4px;
-  }
-
-  .side-nav ul li a::before {
-    /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
-    display: block;
-    margin: 0;
-    top: 0;
-  }
 }
 
 @media (min-width: 740px) and (max-width: 980px) {
-  .side-nav {
-    width: 200px;
-  }
 }

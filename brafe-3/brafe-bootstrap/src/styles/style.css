@@ -1,0 +1,10 @@
+/* Estilos globais */
+@import url("../styles/utils/bootstrap.min.css");
+@import url("./common/reset.css");
+@import url("./common/global.css");
+
+/* Sessões principais */
+@import url("./partials/header.css");
+@import url("./partials/side-nav.css");
+@import url("./partials/products.css");
+@import url("./partials/footer.css");

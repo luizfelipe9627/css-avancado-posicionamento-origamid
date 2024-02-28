@@ -1,0 +1,107 @@
+.products {
+  /* O flex 1 faz com que o item ocupe 100% do espaço disponível */
+  flex: 1;
+  padding: 20px 10px;
+}
+
+.products header {
+  /* O display flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: flex;
+  /* O align-items está sendo usado para que os elementos fiquem alinhados verticalmente(deitado) no centro. */
+  align-items: center;
+}
+
+.products h1 {
+  font-size: 2.25em;
+  /* O flex 1 faz com que o item ocupe 100% do espaço disponível */
+  flex: 1;
+  margin-right: 20px;
+}
+
+.adicionar-produtos {
+  background-color: #c17139;
+  color: #e7e4d8;
+  font-size: 1.125em;
+  font-family: Courier, monospace;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.products-item {
+  /* O display flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+  display: flex;
+  /* O align-items está sendo usado para que os elementos fiquem alinhados verticalmente(deitado) no centro. */
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  margin-top: 20px;
+  /* O position relative está sendo usado para que fique relativo ao elemento pai, sendo assim, o elemento filho pode ser posicionado em relação ao elemento pai mas seu espaço não é alterado. */
+  position: relative;
+}
+
+.products-item a {
+  width: 24px;
+  height: 24px;
+  /* O text-indent está sendo usado para que o texto fique fora da tela, mas o elemento ainda seja acessível para leitores de tela. */
+  text-indent: -9999px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  /* O overflow hidden está sendo usado para que o elemento não ultrapasse o tamanho do elemento pai. */
+  overflow: hidden;
+  /* O background está sendo usado para que o elemento tenha uma imagem de fundo e que não se repita. */
+  background: url("../../assets/edit.svg") no-repeat;
+}
+
+.products-item a:hover {
+  /* O background está sendo usado para que o elemento tenha uma imagem de fundo e que não se repita. */
+  background: url("../../assets/edit-hover.svg") no-repeat;
+}
+
+.products-item img {
+  /* O align-self é usado para o alinhamento de um único item flexível, nesse caso está alinhando o item na parte superior. */
+  align-self: flex-start;
+}
+
+.products-item ul {
+  padding: 0 20px;
+}
+
+.products-item ul li {
+  font-family: Courier, monospace;
+  font-size: 1.125em;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e4d8;
+}
+
+/* Está sendo aplicado um estilo para o último elemento filho li da ul. */
+.products-item ul li:last-child {
+  border-bottom: none;
+}
+
+.products-item span {
+  /* O display inline-block está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário(block). */
+  display: inline-block;
+  font-weight: bold;
+  width: 70px;
+}
+
+@media (max-width: 739px) {
+  .products header {
+    /* O flex-direction column está sendo usado para que os elementos fiquem um embaixo do outro. */
+    flex-direction: column;
+    /* O align-items initial está sendo usado para que os elementos fiquem alinhados verticalmente(deitado) ao seu valor padrão. */
+    align-items: initial;
+  }
+
+  .adicionar-produtos {
+    margin: 10px 0;
+  }
+
+  .products-item {
+    /* O flex-direction column está sendo usado para que os elementos fiquem um embaixo do outro. */
+    flex-direction: column;
+  }
+}
