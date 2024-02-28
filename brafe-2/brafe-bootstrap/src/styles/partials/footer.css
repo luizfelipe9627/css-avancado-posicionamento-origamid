@@ -6,3 +6,7 @@
   line-height: 1.4em;
   margin-top: 80px;
 }
+
+.footer p {
+  margin-bottom: 0;
+}
