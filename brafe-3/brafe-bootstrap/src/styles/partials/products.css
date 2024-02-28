@@ -1,8 +1,6 @@
-.products {
-}
-
 .products h1 {
   font-size: 2.25em;
+  font-weight: bold;
 }
 
 .adicionar-produtos {
@@ -43,6 +41,10 @@
   background: url("../../assets/edit-hover.svg") no-repeat;
 }
 
+.products-item img {
+  align-self: center;
+}
+
 .products-item ul {
   padding: 0 20px;
 }
@@ -66,8 +68,8 @@
   width: 70px;
 }
 
-@media (max-width: 739px) {
-}
-
-@media (min-width: 740px) and (max-width: 980px) {
+@media (max-width: 945px) {
+  .products-item img {
+    align-self: flex-start;
+  }
 }

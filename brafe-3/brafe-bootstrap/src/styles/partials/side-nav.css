@@ -2,6 +2,10 @@
   background-color: #252525;
 }
 
+.side-nav ul {
+  margin-bottom: 0;
+}
+
 .side-nav li a {
   /* O display block está sendo usado para que o elemento ocupe toda a largura do elemento pai. */
   display: block;
@@ -54,8 +58,39 @@
   background-position: 0 calc(-24px * 5);
 }
 
-@media (max-width: 739px) {
-}
+@media (max-width: 767px) {
+  .side-nav {
+    margin-top: 10px;
+    background-color: transparent;
+    max-width: 100%;
+  }
 
-@media (min-width: 740px) and (max-width: 980px) {
+  .side-nav ul {
+    /* O display flex está sendo usado para que os elementos fiquem em linha/inline(um do lado do outro) e que possam ocupar somente o espaço necessário. */
+    display: flex;
+    /* O flex-wrap: wrap está sendo usado para que os elementos filhos quebrem linha quando não couberem mais no container pai. */
+    flex-wrap: wrap;
+  }
+
+  .side-nav ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .side-nav ul li a {
+    width: 44px;
+    height: 44px;
+    /* O overflow hidden está sendo usado para que o conteúdo que ultrapassar o tamanho do elemento seja ocultado, no caso oculta o texto. */
+    overflow: hidden;
+    padding: 10px;
+    border: none;
+    color: #252525;
+    background-color: #252525;
+    border-radius: 4px;
+  }
+
+  .side-nav ul li a::before {
+    top: 0;
+    margin: 0;
+  }
 }

@@ -5,3 +5,7 @@
   padding: 60px 0;
   line-height: 1.4em;
 }
+
+.footer p {
+  margin-bottom: 0;
+}
